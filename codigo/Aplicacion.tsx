@@ -24,20 +24,16 @@ import {
   Send,
   Briefcase,
   Code2,
-  Sparkles,
-  Camera,
 } from 'lucide-react';
 
 type FiltroCompetencia = 'todas' | 'frontend' | 'backend' | 'datos' | 'nube' | 'automatizacion';
 type FiltroExperiencia = 'todas' | 'react-angular' | 'java-spring' | 'python-django' | 'php-laravel' | 'cloud-devops';
 type PestanaArquitectura = 'resumen' | 'flujo-nube' | 'codigo';
-type ModoRetrato = '3d' | 'real';
 
 export default function Aplicacion() {
   const [tema, establecerTema] = useState<'oscuro' | 'claro'>('oscuro');
   const [menuMovilAbierto, establecerMenuMovilAbierto] = useState(false);
   const [seccionActiva, establecerSeccionActiva] = useState<string>('#inicio');
-  const [modoRetrato, establecerModoRetrato] = useState<ModoRetrato>('3d');
   const [inclinacionAvatar, establecerInclinacionAvatar] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
   const [filtroCompetencia, establecerFiltroCompetencia] = useState<FiltroCompetencia>('todas');
   const [filtroExperiencia, establecerFiltroExperiencia] = useState<FiltroExperiencia>('todas');
@@ -328,42 +324,6 @@ export default function Aplicacion() {
                 <span className="opacity-40">|</span>
                 <span style={{ color: 'var(--color-accion)' }}>{DATOS_PERFIL.gradoAcademico}</span>
               </div>
-
-              {/* Conmutador interactivo: Avatar 3D Animado vs Foto Real de LinkedIn */}
-              <div
-                className="inline-flex items-center p-1 rounded-full border text-xs font-mono"
-                style={{
-                  backgroundColor: 'var(--color-tarjeta)',
-                  borderColor: 'var(--color-borde)',
-                }}
-                role="group"
-                aria-label="Cambiar modo de retrato"
-              >
-                <button
-                  type="button"
-                  onClick={() => establecerModoRetrato('3d')}
-                  className={`boton-interactivo inline-flex items-center gap-1.5 px-3 py-1 rounded-full cursor-pointer ${
-                    modoRetrato === '3d'
-                      ? 'bg-[#5ab9fc] text-[#07090e] font-semibold'
-                      : 'opacity-75 hover:opacity-100'
-                  }`}
-                >
-                  <Sparkles className="w-3 h-3" />
-                  <span>Avatar 3D</span>
-                </button>
-                <button
-                  type="button"
-                  onClick={() => establecerModoRetrato('real')}
-                  className={`boton-interactivo inline-flex items-center gap-1.5 px-3 py-1 rounded-full cursor-pointer ${
-                    modoRetrato === 'real'
-                      ? 'bg-[#5ab9fc] text-[#07090e] font-semibold'
-                      : 'opacity-75 hover:opacity-100'
-                  }`}
-                >
-                  <Camera className="w-3 h-3" />
-                  <span>Foto LinkedIn</span>
-                </button>
-              </div>
             </div>
 
             {/* ESCENARIO CENTRAL: Tipografía Gigante en 2 pisos + Rostro 3D Superpuesto en medio */}
@@ -472,57 +432,42 @@ export default function Aplicacion() {
                       transformStyle: 'preserve-3d',
                     }}
                   >
-                    {modoRetrato === '3d' ? (
-                      <div className="relative w-full h-full">
-                        <picture>
-                          <source srcSet="/recursos/imagenes/avatar-3d-jose.webp" type="image/webp" />
-                          <img
-                            src="/recursos/imagenes/avatar-3d-jose.png"
-                            alt="Retrato 3D animado de José María Torres Chirinos basado en su fotografía de LinkedIn"
-                            width={512}
-                            height={512}
-                            fetchPriority="high"
-                            decoding="async"
-                            className="w-full h-full object-contain drop-shadow-[0_26px_48px_rgba(0,0,0,0.82)]"
-                          />
-                        </picture>
-
-                        {/* Brillos oculares vivos y párpados sutiles que siguen el ratón para darle vida al rostro 3D */}
-                        <span
-                          aria-hidden="true"
-                          className="absolute w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-white/85 pointer-events-none blur-[0.3px]"
-                          style={{
-                            top: '41.3%',
-                            left: '37.4%',
-                            transform: `translate3d(${inclinacionAvatar.x * 4.5}px, ${inclinacionAvatar.y * 3.5}px, 0)`,
-                            transition: 'transform 90ms linear',
-                          }}
-                        />
-                        <span
-                          aria-hidden="true"
-                          className="absolute w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-white/85 pointer-events-none blur-[0.3px]"
-                          style={{
-                            top: '41.3%',
-                            left: '60.8%',
-                            transform: `translate3d(${inclinacionAvatar.x * 4.5}px, ${inclinacionAvatar.y * 3.5}px, 0)`,
-                            transition: 'transform 90ms linear',
-                          }}
-                        />
-                      </div>
-                    ) : (
-                      <div
-                        className="w-full h-full rounded-full overflow-hidden border-4 shadow-2xl bg-[#131824] flex items-center justify-center"
-                        style={{ borderColor: 'var(--color-accion)' }}
-                      >
+                    <div className="relative w-full h-full">
+                      <picture>
+                        <source srcSet="/recursos/imagenes/avatar-3d-jose.webp" type="image/webp" />
                         <img
-                          src="/recursos/imagenes/foto-jose-torres.jpg"
-                          alt="Fotografía oficial de LinkedIn de José María Torres Chirinos"
-                          width={400}
-                          height={400}
-                          className="w-full h-full object-cover"
+                          src="/recursos/imagenes/avatar-3d-jose.png"
+                          alt="Retrato 3D animado de José María Torres Chirinos"
+                          width={512}
+                          height={512}
+                          fetchPriority="high"
+                          decoding="async"
+                          className="w-full h-full object-contain drop-shadow-[0_26px_48px_rgba(0,0,0,0.82)]"
                         />
-                      </div>
-                    )}
+                      </picture>
+
+                      {/* Brillos oculares vivos que siguen el ratón para darle vida al rostro 3D */}
+                      <span
+                        aria-hidden="true"
+                        className="absolute w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-white/85 pointer-events-none blur-[0.3px]"
+                        style={{
+                          top: '41.3%',
+                          left: '37.4%',
+                          transform: `translate3d(${inclinacionAvatar.x * 4.5}px, ${inclinacionAvatar.y * 3.5}px, 0)`,
+                          transition: 'transform 90ms linear',
+                        }}
+                      />
+                      <span
+                        aria-hidden="true"
+                        className="absolute w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-white/85 pointer-events-none blur-[0.3px]"
+                        style={{
+                          top: '41.3%',
+                          left: '60.8%',
+                          transform: `translate3d(${inclinacionAvatar.x * 4.5}px, ${inclinacionAvatar.y * 3.5}px, 0)`,
+                          transition: 'transform 90ms linear',
+                        }}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
