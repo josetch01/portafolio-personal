@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <rect width="128" height="128" rx="28" fill="#0a0d14"/>
+  <rect x="4" y="4" width="120" height="120" rx="24" stroke="#5ab9fc" stroke-opacity="0.35" stroke-width="3"/>
+  <rect x="16" y="16" width="96" height="96" rx="18" fill="#5ab9fc"/>
+  <text
+    x="64"
+    y="78"
+    text-anchor="middle"
+    fill="#07090e"
+    font-family="JetBrains Mono, monospace, system-ui"
+    font-weight="800"
+    font-size="44"
+    letter-spacing="-2"
+  >JT</text>
+</svg>

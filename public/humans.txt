@@ -1,0 +1,16 @@
+/* TEAM / AUTOR */
+Autor y Desarrollador Full Stack: José María Torres Chirinos
+Rol actual: Analista Desarrollador Full Stack en NGR S.A.C
+Grado académico: Bachiller en Ingeniería de Sistemas (Universidad Señor de Sipán)
+Certificación internacional: Scrum Master Professional Certificate (SMPC® - CertiProf)
+Correo principal: josetorchi@gmail.com
+Correo secundario: jmtch_01@hotmail.com
+Teléfono / WhatsApp: +51 923 945 382
+LinkedIn: https://www.linkedin.com/in/josetorreschirinos
+Ubicación: Perú
+
+/* SITE / ARQUITECTURA */
+Última actualización: 2026-11-19
+Idioma: Español (es-PE)
+Estándares: HTML5 Semántico, CSS3 (Tailwind CSS v4), TypeScript 5.8, React 19, Vite 7, Schema.org JSON-LD, WCAG 2.1 AA
+Sistema de diseño: UI/UX Pro Max + Emil Kowalski Design Engineering + Taste Skill 2.5

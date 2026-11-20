@@ -1,0 +1,22 @@
+{
+  "name": "José María Torres Chirinos — Portafolio Full Stack & Arquitectura Cloud",
+  "short_name": "José Torres",
+  "description": "Portafolio oficial de José María Torres Chirinos: Bachiller en Ingeniería de Sistemas, Scrum Master (SMPC®) y Desarrollador Full Stack & Frontend especialista en React, Angular, TypeScript, Java (Spring Boot), Python (Django), PHP (Laravel), Node.js, AWS, GCP y Azure.",
+  "lang": "es-PE",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0a0d14",
+  "theme_color": "#0a0d14",
+  "categories": ["technology", "business", "productivity", "developer"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

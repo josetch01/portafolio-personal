@@ -1,0 +1,79 @@
+# =============================================================================
+# Reglas de exclusión de Git — Portafolio de José María Torres Chirinos
+# Stack: React 19 + TypeScript 5.8 + Vite 7 + Tailwind CSS v4
+# =============================================================================
+
+# Dependencias y gestores de paquetes
+node_modules/
+jspm_packages/
+.pnpm-store/
+.yarn/
+.npm/
+
+# Salidas de compilación y distribución
+dist/
+dist-ssr/
+build/
+out/
+*.local
+
+# Cachés de compilación y herramientas (Vite, TypeScript, ESLint)
+.vite/
+*.tsbuildinfo
+.eslintcache
+.cache/
+.parcel-cache/
+.turbo/
+
+# Variables de entorno y secretos locales
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# Registros y diagnósticos (Logs)
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Reportes de pruebas y cobertura
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+
+# Editores e IDEs
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Archivos del sistema operativo (Windows, macOS, Linux)
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*~
+
+# Directorios temporales y de despliegue (Vercel, Netlify, Cloudflare)
+tmp/
+temp/
+.vercel/
+.netlify/
+.wrangler/

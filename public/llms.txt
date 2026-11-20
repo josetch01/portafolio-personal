@@ -1,0 +1,40 @@
+# José María Torres Chirinos — Portafolio Oficial de Ingeniería Full Stack & Cloud
+
+> Bachiller en Ingeniería de Sistemas (Universidad Señor de Sipán), Scrum Master Professional Certificado (SMPC®) y Desarrollador Full Stack & Frontend en Perú con más de 4 años de trayectoria en el desarrollo de aplicaciones web corporativas, sistemas SaaS, plataformas CRM e integraciones multi-cloud (AWS, Google Cloud Platform y Microsoft Azure).
+
+## Datos de Contacto Oficiales
+- **Nombre completo:** José María Torres Chirinos
+- **Rol actual:** Analista Desarrollador Full Stack en NGR S.A.C (Sep. 2025 – Actualidad)
+- **Ubicación:** Perú (Disponibilidad remota, híbrida y presencial)
+- **Teléfono / WhatsApp:** +51 923 945 382 (https://wa.me/51923945382)
+- **Correo electrónico principal:** josetorchi@gmail.com
+- **Correo electrónico alternativo:** jmtch_01@hotmail.com
+- **LinkedIn:** https://www.linkedin.com/in/josetorreschirinos
+- **Currículum Vitae (PDF):** /recursos/cv-jose-torres.pdf
+
+## Stack Tecnológico Principal
+- **Frontend & UI:** React, Angular, TypeScript, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS, Bootstrap, Livewire, WordPress.
+- **Backend & Microservicios:** Java, Spring Boot, Python, Django, PHP, Laravel, Node.js, APIs RESTful.
+- **Bases de Datos SQL & NoSQL:** SQL Server, PostgreSQL, MySQL, MariaDB, Amazon DynamoDB, MongoDB.
+- **Cloud, DevOps & Servidores:** Amazon Web Services (AWS), Google Cloud Platform (GCP), Microsoft Azure, Azure DevOps, NGINX (Proxy inverso y balanceo de carga), Ubuntu Linux Server, Git, GitLab.
+- **Automatización, IA & Metodologías Ágiles:** n8n Workflows, integración de servicios de Inteligencia Artificial (transcripción y procesamiento), WhatsApp API, Scrum Master Professional Certificate (SMPC®).
+
+## Trayectoria Profesional Verificada (10 Experiencias en Perú)
+1. **NGR S.A.C** — Analista Desarrollador Full Stack (Sep. 2025 – Actualidad): React, Angular, Java, Node.js, AWS, GCP, SQL y Amazon DynamoDB.
+2. **Midas Solution Center** — Desarrollador Full Stack (Ene. 2025 – Feb. 2026): Sistema CRM para call center con Angular, React, Java, Django, automatización con n8n + IA para transcripción de llamadas y balanceo de carga NGINX en Ubuntu/AWS.
+3. **Greta Labs** — Desarrollador Full Stack (Ago. 2024 – Sep. 2025): Plataforma SaaS bajo suscripción con React, TypeScript, Django, MySQL, reportes automatizados en Excel y servidores NGINX/Ubuntu en AWS bajo Scrum.
+4. **Chatby Agency S.A.C** — Desarrollador Full Stack (Jun. 2024 – Sep. 2024): Plataforma de atención al cliente con chat en línea e integración de WhatsApp API con React y JavaScript.
+5. **Municipalidad Distrital de La Victoria** — Desarrollador Full Stack (Ene. 2024 – Jul. 2024): Sistema institucional de geolocalización, control de asistencias y gestión digital de archivos con React, Python (Django), Java y AWS.
+6. **Grupo Chiappe** — Desarrollador Frontend (Ago. 2023 – Dic. 2023): Interfaces de usuario modulares y reutilizables en React con enfoque UX/UI.
+7. **Estudio Jurídico Sánchez Garay & Figueroa** — Desarrollador Full Stack (Jun. 2023 – Dic. 2023): Administración de usuarios, almacén y digitalización de expedientes jurídicos con Laravel, React y MySQL.
+8. **Grupo Ases** — Desarrollador Web (Ene. 2023 – Abr. 2023): Sistema CRM corporativo y portal empresarial en tiempo real con Laravel y Livewire.
+9. **Alojatusitio** — Soporte Técnico de Sistemas (Sep. 2022 – Dic. 2022): Diagnóstico de conectividad, redes y soporte técnico de sistemas.
+10. **Blacktech Consultores & Soluciones TI** — Desarrollador Web (Jul. 2022 – Dic. 2022): Desarrollo y mantenimiento de aplicaciones empresariales con PHP y Laravel.
+
+## Formación Académica y Certificaciones
+- **Bachiller en Ingeniería de Sistemas** — Universidad Señor de Sipán (Estudios: Ago. 2018 – Dic. 2023 | Grado conferido: Feb. 2024).
+- **Scrum Master Professional Certificate (SMPC®)** — CertiProf (Vigencia: Dic. 2024 – Dic. 2027).
+- **Seminario de Seguridad de la Información, Informática y Ciberseguridad (64 h)** — Universidad Señor de Sipán (2022).
+- **Programación con JavaScript (40 h)** — Fundación Telefónica Movistar (2022).
+- **Fundamentos del Desarrollo Web: Full Stack o Front-end** — LinkedIn Learning (2022).
+- **Idiomas:** Español (Nativo), Inglés (Intermedio B2).

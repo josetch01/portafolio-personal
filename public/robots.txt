@@ -1,0 +1,43 @@
+# Archivo de directivas para motores de búsqueda y rastreadores IA — Portafolio de José María Torres Chirinos
+# Ingeniero de Sistemas | Desarrollador Full Stack & Frontend (React, Angular, Java, Python, PHP, Node.js, AWS, GCP, Azure)
+
+User-agent: *
+Allow: /
+Disallow: /node_modules/
+Disallow: /.git/
+
+# Rastreadores de motores de búsqueda principales
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /recursos/imagenes/
+Allow: /recursos/iconos/
+
+User-agent: Bingbot
+Allow: /
+
+# Rastreadores de búsqueda con IA y redes profesionales (LinkedIn, WhatsApp, OpenAI, Google-Extended, Perplexity)
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Mapa del sitio XML e índice semántico para IA
+Sitemap: https://josetorres.pe/sitemap.xml
