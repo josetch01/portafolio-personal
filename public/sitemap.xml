@@ -6,20 +6,20 @@
 >
   <!-- Página Principal — Portafolio Oficial de José María Torres Chirinos -->
   <url>
-    <loc>https://josetorres.pe/</loc>
+    <loc>https://jose-torres-portafolio.netlify.app/</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="es-PE" href="https://josetorres.pe/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://josetorres.pe/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://josetorres.pe/" />
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://jose-torres-portafolio.netlify.app/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://jose-torres-portafolio.netlify.app/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jose-torres-portafolio.netlify.app/" />
     <image:image>
-      <image:loc>https://josetorres.pe/recursos/imagenes/arquitectura-hero.png</image:loc>
+      <image:loc>https://jose-torres-portafolio.netlify.app/recursos/imagenes/arquitectura-hero.png</image:loc>
       <image:title>José María Torres Chirinos — Ingeniería Full Stack y Arquitectura Multi-Cloud</image:title>
       <image:caption>Portafolio profesional de José María Torres Chirinos: Desarrollador Full Stack especialista en React, Angular, TypeScript, Java Spring Boot, Python Django, Laravel, Node.js, AWS, GCP y Azure.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://josetorres.pe/recursos/imagenes/sistemas-cloud.png</image:loc>
+      <image:loc>https://jose-torres-portafolio.netlify.app/recursos/imagenes/sistemas-cloud.png</image:loc>
       <image:title>Arquitectura Backend, Microservicios y Sistemas Cloud</image:title>
       <image:caption>Sistemas corporativos y plataformas CRM desplegadas sobre AWS, Google Cloud Platform y Microsoft Azure con balanceo NGINX.</image:caption>
     </image:image>
@@ -27,7 +27,7 @@
 
   <!-- Sección: Competencias Técnicas y Stack Oficial -->
   <url>
-    <loc>https://josetorres.pe/#competencias</loc>
+    <loc>https://jose-torres-portafolio.netlify.app/#competencias</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -35,7 +35,7 @@
 
   <!-- Sección: Casos de Éxito y Sistemas en Producción -->
   <url>
-    <loc>https://josetorres.pe/#sistemas</loc>
+    <loc>https://jose-torres-portafolio.netlify.app/#sistemas</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -43,7 +43,7 @@
 
   <!-- Sección: Trayectoria Profesional (10 Experiencias en Perú) -->
   <url>
-    <loc>https://josetorres.pe/#trayectoria</loc>
+    <loc>https://jose-torres-portafolio.netlify.app/#trayectoria</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -51,7 +51,7 @@
 
   <!-- Sección: Formación Universitaria (Bachiller en Ing. de Sistemas) y Certificaciones (SMPC®) -->
   <url>
-    <loc>https://josetorres.pe/#formacion</loc>
+    <loc>https://jose-torres-portafolio.netlify.app/#formacion</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -59,7 +59,7 @@
 
   <!-- Sección: Contacto Directo (WhatsApp, Correo y LinkedIn) -->
   <url>
-    <loc>https://josetorres.pe/#contacto</loc>
+    <loc>https://jose-torres-portafolio.netlify.app/#contacto</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -67,7 +67,7 @@
 
   <!-- Documento Oficial: Currículum Vitae en PDF -->
   <url>
-    <loc>https://josetorres.pe/recursos/cv-jose-torres.pdf</loc>
+    <loc>https://jose-torres-portafolio.netlify.app/recursos/cv-jose-torres.pdf</loc>
     <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

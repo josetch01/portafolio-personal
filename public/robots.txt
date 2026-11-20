@@ -40,4 +40,4 @@ User-agent: ClaudeBot
 Allow: /
 
 # Mapa del sitio XML e índice semántico para IA
-Sitemap: https://josetorres.pe/sitemap.xml
+Sitemap: https://jose-torres-portafolio.netlify.app/sitemap.xml
