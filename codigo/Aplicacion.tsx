@@ -24,6 +24,7 @@ import {
   Send,
   Briefcase,
   Code2,
+  Eye,
 } from 'lucide-react';
 
 type FiltroCompetencia = 'todas' | 'frontend' | 'backend' | 'datos' | 'nube' | 'automatizacion';
@@ -193,12 +194,24 @@ export default function Aplicacion() {
 
             <a
               href={DATOS_PERFIL.cvUrl}
-              download="CV_Jose_Maria_Torres_Chirinos.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="capsula-nav-flotante boton-interactivo hidden sm:inline-flex items-center gap-2 h-11 px-4 rounded-full font-medium text-xs font-mono cursor-pointer hover:border-[#5ab9fc]/50"
+              style={{ color: 'var(--color-tinta)' }}
+              aria-label="Ver Currículum Vitae en PDF en una nueva pestaña"
+            >
+              <Eye className="w-3.5 h-3.5" style={{ color: 'var(--color-accion)' }} />
+              <span>Ver CV</span>
+            </a>
+
+            <a
+              href={DATOS_PERFIL.cvUrl}
+              download="CV_Jose_Maria_Torres_Chirinos.pdf"
+              className="capsula-nav-flotante boton-interactivo hidden lg:inline-flex items-center gap-2 h-11 px-4 rounded-full font-medium text-xs font-mono cursor-pointer hover:border-[#5ab9fc]/50"
               style={{ color: 'var(--color-tinta)' }}
             >
               <Download className="w-3.5 h-3.5" style={{ color: 'var(--color-accion)' }} />
-              <span>CV PDF</span>
+              <span>Descargar</span>
             </a>
 
             <button
@@ -283,14 +296,31 @@ export default function Aplicacion() {
                   {item.etiqueta}
                 </a>
               ))}
-              <a
-                href={DATOS_PERFIL.cvUrl}
-                download="CV_Jose_Maria_Torres_Chirinos.pdf"
-                className="boton-interactivo boton-pildora-magico mt-2 inline-flex items-center justify-center gap-2 h-11 rounded-full font-semibold text-sm"
-              >
-                <Download className="w-4 h-4" />
-                <span>Descargar CV Oficial (PDF)</span>
-              </a>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2">
+                <a
+                  href={DATOS_PERFIL.cvUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => establecerMenuMovilAbierto(false)}
+                  className="boton-interactivo boton-pildora-magico inline-flex items-center justify-center gap-2 h-11 rounded-full font-semibold text-sm cursor-pointer"
+                >
+                  <Eye className="w-4 h-4" />
+                  <span>Ver CV</span>
+                </a>
+                <a
+                  href={DATOS_PERFIL.cvUrl}
+                  download="CV_Jose_Maria_Torres_Chirinos.pdf"
+                  className="boton-interactivo boton-secundario-taste inline-flex items-center justify-center gap-2 h-11 rounded-full font-semibold text-sm border"
+                  style={{
+                    backgroundColor: 'var(--color-tarjeta)',
+                    borderColor: 'var(--color-borde)',
+                    color: 'var(--color-tinta)',
+                  }}
+                >
+                  <Download className="w-4 h-4" />
+                  <span>Descargar PDF</span>
+                </a>
+              </div>
             </div>
           </div>
         )}
@@ -474,7 +504,7 @@ export default function Aplicacion() {
 
               {/* BARRA INFERIOR DEL ESCENARIO HERO (Idéntica en composición a la referencia: CTA Píldora a la izquierda, Nombre + Rol a la derecha) */}
               <div className="w-full max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 pt-2 pb-10 animar-entrada-3">
-                {/* Izquierda: Botones de Acción (CTA Píldora Iluminada + Contacto) */}
+                {/* Izquierda: Botones de Acción (CTA Píldora Iluminada + Ver CV en otra pestaña + Contacto) */}
                 <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3">
                   <a
                     href="#sistemas"
@@ -482,6 +512,21 @@ export default function Aplicacion() {
                   >
                     <span>Ver Mis Sistemas</span>
                     <ArrowUpRight className="w-4 h-4" />
+                  </a>
+
+                  <a
+                    href={DATOS_PERFIL.cvUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="boton-interactivo boton-secundario-taste inline-flex items-center gap-2 h-12 px-6 rounded-full font-semibold text-sm border cursor-pointer"
+                    style={{
+                      backgroundColor: 'var(--color-tarjeta)',
+                      borderColor: 'var(--color-accion)',
+                      color: 'var(--color-tinta)',
+                    }}
+                  >
+                    <Eye className="w-4 h-4" style={{ color: 'var(--color-accion)' }} />
+                    <span>Ver CV</span>
                   </a>
 
                   <a
