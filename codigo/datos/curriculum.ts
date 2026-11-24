@@ -29,6 +29,8 @@ export interface CasoSolucion {
   ubicacion: string;
   descripcion: string;
   impactoTecnico: string;
+  urlDemo?: string;
+  urlRepositorio?: string;
   imagenEditorial: string;
   paletaPanel: 'arena' | 'cielo' | 'salvia' | 'pintura';
   tipoFragmento: 'revision-codigo' | 'flujo-ci' | 'analitica-saas' | 'chat-whatsapp' | 'geolocalizacion' | 'expedientes-crm';
@@ -82,7 +84,7 @@ export const DATOS_PERFIL = {
     'Bachiller en Ingeniería de Sistemas y Desarrollador Full Stack y Frontend con sólida experiencia en el diseño, desarrollo y mantenimiento de aplicaciones web, sistemas empresariales y plataformas CRM. Especialista en interfaces dinámicas con React, Angular y TypeScript, integradas con arquitecturas backend en Java (Spring Boot), Python (Django), PHP (Laravel) y Node.js sobre infraestructuras cloud (AWS, GCP y Microsoft Azure).',
   metricasHero: [
     { valor: '4+ Años', etiqueta: 'Trayectoria en Ingeniería de Software' },
-    { valor: '10', etiqueta: 'Experiencias Corporativas en Perú' },
+    { valor: '11', etiqueta: 'Experiencias de Desarrollo en Perú' },
     { valor: '3 Nubes', etiqueta: 'AWS · Google Cloud · Azure' },
     { valor: 'SMPC®', etiqueta: 'Scrum Master Professional Certificado' },
   ],
@@ -205,6 +207,40 @@ export const CATEGORIAS_COMPETENCIAS: CategoriaCompetencia[] = [
 ];
 
 export const CASOS_SOLUCIONES: CasoSolucion[] = [
+  {
+    id: 'comparasuperm-peru',
+    categoria: 'Producto Propio · Extracción en Vivo & Serverless',
+    titulo: 'ComparaSuperM · Comparador de Precios de Supermercados del Perú en Tiempo Real',
+    cliente: 'Proyecto Propio en Producción',
+    periodo: '2026 – Actualidad',
+    ubicacion: 'Perú',
+    urlDemo: 'https://comparasuperm.tecnosoftia.com',
+    urlRepositorio: 'https://github.com/josetch01/comparasuperm',
+    descripcion:
+      'Plataforma web interactiva que consulta y compara precios en tiempo real entre 7 cadenas de supermercados del Perú (Tottus, Plaza Vea, Metro, Wong, Makro, Vega y Oechsle), detectando descuentos exclusivos con Tarjeta CMR, Tarjeta Oh! y Tarjeta Cencosud.',
+    impactoTecnico:
+      'Arquitectura serverless en Netlify Functions con extracción concurrente, agrupación semántica por código EAN y presentación, filtro estricto de relevancia, modo claro/oscuro, gestos táctiles y SEO técnico con JSON-LD AggregateOffer.',
+    imagenEditorial: '/recursos/imagenes/paisaje-reflejo.webp',
+    paletaPanel: 'salvia',
+    tipoFragmento: 'flujo-ci',
+    tecnologias: [
+      { nombre: 'React', icono: '/recursos/iconos/react.svg' },
+      { nombre: 'JavaScript (ES6+)', icono: '/recursos/iconos/javascript.svg' },
+      { nombre: 'Node.js', icono: '/recursos/iconos/nodejs.svg' },
+      { nombre: 'CSS3', icono: '/recursos/iconos/css.svg' },
+      { nombre: 'Git', icono: '/recursos/iconos/git.svg' },
+    ],
+    fragmentoDatos: {
+      archivoRuta: 'servidor/extractor_tiendas_reales.js',
+      estado: 'En vivo · 7 Supermercados',
+      metricaPrincipal: 'comparasuperm.tecnosoftia.com',
+      pasosPipeline: [
+        { nombre: 'Extracción Paralela (7 Cadenas VTEX + Tottus)', icono: '/recursos/iconos/nodejs.svg', tiempo: '1.1s', estado: 'completado' },
+        { nombre: 'Agrupación Semántica por EAN y Presentación', icono: '/recursos/iconos/javascript.svg', tiempo: '18ms', estado: 'completado' },
+        { nombre: 'Cálculo de Tarjetas (CMR · Oh! · Cencosud)', icono: '/recursos/iconos/react.svg', tiempo: 'En vivo', estado: 'activo' },
+      ],
+    },
+  },
   {
     id: 'ngr-corporativo',
     categoria: 'Arquitectura Multi-Cloud & Optimización de Datos',
@@ -400,6 +436,28 @@ export const CASOS_SOLUCIONES: CasoSolucion[] = [
 ];
 
 export const EXPERIENCIAS_LABORALES: ExperienciaLaboral[] = [
+  {
+    id: 'comparasuperm',
+    cargo: 'Creador & Desarrollador Full Stack — ComparaSuperM',
+    empresa: 'Proyecto Independiente en Producción (comparasuperm.tecnosoftia.com)',
+    ubicacion: 'Perú',
+    periodo: '2026 – Actualidad',
+    esActual: true,
+    etiquetasFiltro: ['react-angular', 'cloud-devops'],
+    logros: [
+      'Diseño y desarrollo integral de ComparaSuperM, comparador de precios en tiempo real para 7 cadenas de supermercados del Perú (Tottus, Plaza Vea, Metro, Wong, Makro, Vega y Oechsle · Real Plaza) desplegado en Netlify con funciones serverless en Node.js.',
+      'Implementación de motor de extracción concurrente, normalización semántica por código EAN y presentaciones/multipacks, filtro estricto de relevancia y detección automática de promociones con Tarjeta CMR, Tarjeta Oh! y Tarjeta Cencosud.',
+      'Construcción de interfaz responsiva en React 19 con modo claro/oscuro, panel de filtros unificado con gestos táctiles, optimización de rendimiento móvil y arquitectura SEO técnica (robots.txt, sitemap.xml, Open Graph y JSON-LD Product + AggregateOffer).',
+    ],
+    tecnologias: [
+      { nombre: 'React', icono: '/recursos/iconos/react.svg' },
+      { nombre: 'Node.js', icono: '/recursos/iconos/nodejs.svg' },
+      { nombre: 'JavaScript (ES6+)', icono: '/recursos/iconos/javascript.svg' },
+      { nombre: 'CSS3', icono: '/recursos/iconos/css.svg' },
+      { nombre: 'Git', icono: '/recursos/iconos/git.svg' },
+      { nombre: 'Netlify Functions' },
+    ],
+  },
   {
     id: 'ngr',
     cargo: 'Analista Desarrollador Full Stack',

@@ -919,7 +919,7 @@ export default function Aplicacion() {
                 <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
                   Experiencia profesional verificada.{' '}
                   <span style={{ color: 'var(--color-tinta-secundaria)' }} className="font-normal">
-                    10 etapas impulsando soluciones web en Perú.
+                    11 etapas impulsando soluciones web en Perú.
                   </span>
                 </h2>
               </div>
@@ -927,7 +927,7 @@ export default function Aplicacion() {
               <div className="flex flex-wrap gap-2" role="toolbar" aria-label="Filtrar trayectoria por stack">
                 {(
                   [
-                    { id: 'todas', etiqueta: 'Todas (10)' },
+                    { id: 'todas', etiqueta: 'Todas (11)' },
                     { id: 'react-angular', etiqueta: 'React / Angular' },
                     { id: 'java-spring', etiqueta: 'Java' },
                     { id: 'python-django', etiqueta: 'Python / Django' },
@@ -1656,24 +1656,63 @@ function TarjetaCasoProduccion({ caso }: { caso: CasoSolucion }) {
           </div>
         </div>
 
-        <div className="flex flex-wrap gap-2">
-          {caso.tecnologias.map((tec) => (
-            <span
-              key={tec.nombre}
-              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-mono border"
-              style={{
-                backgroundColor: 'var(--color-tarjeta-elevada)',
-                borderColor: 'var(--color-borde)',
-              }}
-            >
-              {tec.icono && (
-                <span className="azulejo-icono !w-4 !h-4 !p-0.5">
-                  <img src={tec.icono} alt="" className="w-full h-full object-contain" />
-                </span>
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div className="flex flex-wrap gap-2">
+            {caso.tecnologias.map((tec) => (
+              <span
+                key={tec.nombre}
+                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-mono border"
+                style={{
+                  backgroundColor: 'var(--color-tarjeta-elevada)',
+                  borderColor: 'var(--color-borde)',
+                }}
+              >
+                {tec.icono && (
+                  <span className="azulejo-icono !w-4 !h-4 !p-0.5">
+                    <img src={tec.icono} alt="" className="w-full h-full object-contain" />
+                  </span>
+                )}
+                <span>{tec.nombre}</span>
+              </span>
+            ))}
+          </div>
+
+          {(caso.urlDemo || caso.urlRepositorio) && (
+            <div className="flex flex-wrap items-center gap-2">
+              {caso.urlDemo && (
+                <a
+                  href={caso.urlDemo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="boton-interactivo inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold"
+                  style={{
+                    backgroundColor: 'var(--color-accion)',
+                    color: 'var(--color-sobre-accion)',
+                  }}
+                >
+                  <Globe className="w-3.5 h-3.5" />
+                  <span>Ver en vivo</span>
+                  <ArrowUpRight className="w-3.5 h-3.5" />
+                </a>
               )}
-              <span>{tec.nombre}</span>
-            </span>
-          ))}
+              {caso.urlRepositorio && (
+                <a
+                  href={caso.urlRepositorio}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="boton-interactivo inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono border"
+                  style={{
+                    backgroundColor: 'var(--color-tarjeta-elevada)',
+                    borderColor: 'var(--color-borde)',
+                    color: 'var(--color-tinta)',
+                  }}
+                >
+                  <Code2 className="w-3.5 h-3.5" />
+                  <span>GitHub</span>
+                </a>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </article>
